@@ -14,37 +14,22 @@ public class Veiculo{
     }
     public Veiculo(){
 
-        System.out.println("Digite o Código do veiculo: ");
+        System.out.println("Digite o Código do veiculo");
         this.codigo = scanner.nextInt();
 
-        System.out.println("Digite a marca do veiculo: ");
+        System.out.println("Digite a marca do veiculo");
         this.marca = scanner.next();
 
-        System.out.println("Digite o modelo do veiculo: ");
+        System.out.println("Digite o modelo do veiculo");
         this.modelo = scanner.next();
 
-        System.out.println("Digite a cor do veiculo: ");
+        System.out.println("Digite a cor do veiculo");
         this.cor = scanner.next();
 
-        System.out.println("Digite o valor do veiculo: ");
+        System.out.println("Digite o valor do veiculo");
         this.valor = scanner.nextDouble();
 
     }
-
-    public String getMarca() {
-        return marca;
-    }
-    public String getModelo() {
-        return modelo;
-    }
-    public double getPreco() {
-        return preco;
-    }
-    @Override
-    public String toString() {
-        return marca + " " + modelo + " - " + ano + " - R$" + preco;
-    }
-}
 
 class Concessionaria {
     private List<Veiculo> estoque;
